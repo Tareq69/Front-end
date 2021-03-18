@@ -1,0 +1,13 @@
+p{
+    color:darkblue;
+    background-color: darkkhaki;
+}
+a{
+    text-decoration: none;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+
+}
