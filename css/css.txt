@@ -1,0 +1,9 @@
+Css is used to design our websites.
+Css can be used in 3 ways. They are 1) Inline 2)Inside the html file 3) Creating a css file and linking it inside the head of html file.
+Css syntax: Selector{
+    property: Value;
+}
+
+selectors{
+    id(#),tag name,class(.),
+}
