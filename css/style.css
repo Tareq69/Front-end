@@ -2,8 +2,36 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #27213C;
+}
+body{
+    background: url("./images/pen-4337524_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;  
 }
 h1{
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    border: 1px solid chartreuse;
+    color: white;
+    display: inline;
+}
+.header a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin:25px;
+    color:yellow;
+    border: 1px solid chartreuse;
+    padding: 15px;
+    background-color: yellowgreen;
+}
+.navbar{
+    width:500px; 
 }
