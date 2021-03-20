@@ -8,4 +8,7 @@ selectors{
     id(#),tag name,class(.),
 }
 
+@media queries: max-width: 600px ( Changes will be made for devices <=600px)
+@media queries: min-width: 600px ( Changes will be made for devices >=600px)
+RWD - always design for the smaller devices first and use media queries to make the change for devices with larger screen.
 css layout models:
