@@ -1,0 +1,84 @@
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body,html{
+    margin: 0;
+}
+.banner-container{
+    background-color: #C3A995;
+}
+.myrow{
+    height: 100vh;
+}
+.bancol{
+    color: #EBF5EE;
+    background-color: #2F2F2F;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.navbar-container{
+    margin-bottom: 0!important;
+    background-color: black;
+    position: sticky!important;
+    top: 0!important;
+    z-index: 2!important;
+}
+.navcon,li{
+    font-size:16px;
+
+}
+.about-container{
+    padding: 0;
+    margin: 0;
+    background-color: #247BA0;
+}
+.about-container,p{
+    font-size: 16px;
+}
+.edu{
+    color:brown;
+    text-align: center;
+    font-size: 32px;
+}
+.circle{
+    background-color: brown;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.project-container{
+    background-color: #247BA0; 
+}
+.project-container,a{
+    font-size: 16px;
+}
+.form-container{
+    background-color: #474D50;
+}
+.inner-form{
+    background-color: #6d7579!important;
+}
+.mybtn{
+    background-color: #e21129;
+}
+.mybtn:hover{
+    color:black!important;
+}
+.footer{
+   background-color: #247BA0;
+}
+.circlei{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    font-size: 40px;
+    text-align: center;
+    color: #247BA0;
+}
+.circlei:hover{
+    background-color: #2F2F2F;
+}
