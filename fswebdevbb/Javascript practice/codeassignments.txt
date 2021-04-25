@@ -1,0 +1,118 @@
+// Celsius to farenheit conversion //
+var x;
+var x = prompt("Enter temperature in celsius: ");
+var y = (9 / 5 * x) + 32;
+alert("Temperature in farenheit is "+ y);
+var success = "Task completed!";
+console.log(success);
+
+// Task 2
+console.log("Select an option")
+console.log("1. Add")
+console.log("2. Subtract")
+console.log("3. Multiply")
+console.log("4. Division")
+
+
+var x = prompt("Enter an option")
+x = parseInt(x)
+var num1 = prompt("Enter number1")
+num1 = parseInt(num1)
+var num2 = prompt("Enter number2")
+num2 = parseInt(num2)
+
+
+var num1c = isNaN(num1)
+var num2c = isNaN(num2)
+var optc = isNaN(x)
+
+if (num1c || num2c || optc) {
+    console.log("Invalid Input")
+}
+else {
+    switch (x) {
+        case 1:
+            console.log(num1 + num2)
+            break;
+        case 2:
+            console.log(num1 - num2)
+            break;
+        case 3:
+            console.log(num1 * num2)
+            break;
+        case 4:
+            console.log(num1 / num2)
+            break;
+        default:
+            console.log("Invalid input")
+    }
+}
+
+// Sum of series
+
+x = prompt("Enter the number of terms: ")
+x = parseInt(x)
+var sum = 0;
+var i = 1;
+series = ""
+for (var i = 1; i <= x; i++){
+    sum = sum + i ** 2;
+    series = series + (i ** 2).toString() + " ";
+    if (i == x) { continue; }
+    series+= "+ "
+    
+}
+console.log(series,"=",sum)
+
+//W3 schools exercise 1
+let today = new Date()
+
+console.log(today);
+var day = today.getDay();
+let daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+console.log("Today is: ", daylist[day])
+
+var hour = today.getHours();
+var minutes = today.getMinutes();
+var seconds = today.getSeconds();
+
+let prepend;
+if (hour >= 12) {
+    prepend = "PM"
+}
+else {
+    prepend = "AM"
+}
+
+console.log("Current time: ",hour,prepend,"",minutes,"mins", seconds,"secs")
+
+//letter grade assignment
+
+let x = prompt("Enter your grade")
+x = parseInt(x)
+
+if (x < 0 || x > 100) {
+    console.log("Invalid Input")
+}
+else if (x >= 0 && x < 33) {
+    console.log("F")
+}
+else if (x >= 33 && x < 40) {
+    console.log("D")
+}
+else if (x >= 40 && x < 50) {
+    console.log("C")
+}
+else if (x >= 50 && x < 60) {
+    console.log("B")
+}
+else if (x >= 60 && x < 70) {
+    console.log("A-")
+}
+else if (x >= 70 && x < 80) {
+    console.log("A")
+}
+else{
+    console.log("A+")
+}
+-------------------------------------------
