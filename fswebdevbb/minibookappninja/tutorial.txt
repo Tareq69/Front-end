@@ -1,0 +1,8 @@
+
+1. document -> selects the whole document of the page / whole page
+2. document.getElemtById('id') -> Selects an specific element with an specific id
+3.document.getElemtByClassName('className') -> Selects  elements with that specificc className
+4. document.getElemtByTagName('TagName') -> Selects  elements with that tag
+5. Array.from(htmlcollection) -> Turns the html collection ito an array
+6.  item.textcontent =" " -> changing text content of an element 
+7.  item.textcontent +=" " -> appending text content in an element 

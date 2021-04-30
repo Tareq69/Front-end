@@ -174,9 +174,51 @@ console.log(list2)
 //list2[0].remove()
 */
 
-let btn = document.querySelector('#sample-button').addEventListener('click', message);
+document.querySelector('#sample-button').addEventListener('click', getdata);
 
-function message() {
-    alert("Button clicked")
+function getdata(e) {
+    
+    let xhr = new XMLHttpRequest;
+
+    xhr.open('GET', 'http://api.icndb.com/jokes/random/5', true);
+
+    xhr.onload = function () {
+        if (this.status === 200) {
+            let data = JSON.parse(this.responseText);
+            let joke = data.value[4].joke;
+            document.querySelector('.output').innerHTML = `<h4>${joke}</h4?`
+           // let joke = data.value[1].joke;
+            //console.log(joke);
+           console.log(data)
+        }
+    }
+
+    xhr.send();
+
 }
 
+
+// weather api
+
+// document.querySelector('#sample-button1').addEventListener('click', getweather);
+
+// function getweather(e){
+
+//     const data = null;
+
+//     const xhr = new XMLHttpRequest();
+//     xhr.withCredentials = true;
+    
+//     xhr.addEventListener("readystatechange", function () {
+//         if (this.readyState === this.DONE) {
+//             console.log(this.responseText);
+//         }
+//     });
+    
+//     xhr.open("GET", "https://visual-crossing-weather.p.rapidapi.com/history?startDateTime=2019-01-01T00%3A00%3A00&aggregateHours=24&location=Washington%2CDC%2CUSA&endDateTime=2019-01-03T00%3A00%3A00&unitGroup=us&dayStartTime=8%3A00%3A00&contentType=csv&dayEndTime=17%3A00%3A00&shortColumnNames=0");
+//     xhr.setRequestHeader("x-rapidapi-key", "e5a55f4cf0mshcfa9bb8ff89310ep15d32djsn9608c2984c7f");
+//     xhr.setRequestHeader("x-rapidapi-host", "visual-crossing-weather.p.rapidapi.com");
+    
+//     xhr.send(data);
+
+// }

@@ -1,0 +1,33 @@
+
+.main{
+    border-radius: 5px;
+    background: #EEEEEE;
+}
+#header{
+    background: #EEEEEE;
+}
+#mainheader{
+    padding-top: 20px;
+    font-size: 3rem;
+}
+#wrapper{
+    background: white;
+    padding: 10px;
+    margin: 0;
+}
+ #timeline{
+    background: #EEEEEE;
+} 
+.btmtext{
+    font-style: italic;
+    display: inline-block;
+    padding-top: 20px;
+    text-align: left;
+}
+#btmtext1{
+    padding-top: 5px; 
+}
+/* #btmtext2{
+    display: inline-block;
+    text-align: left;
+} */
