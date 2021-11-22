@@ -1,0 +1,14 @@
+
+
+1. From the dataset svm  finds a hyperplane that  distinctly classifies the data points. Our goal here is to find a that has maximum distance between data points of both classes. Maximizing the margin distance provides some additional reinforcement so that future data points can be classified with more confidence.
+For the given problem A and B has 7 different class levels. But A has 1 million data points where as B has 2 million data point. But for B the optimal hyperplane  are far form its corresponding data points which 
+means its based on large margin svm than A.  so , we see that  B will take less time to predict for new data points comparing to A.
+
+
+
+2.
+We can use linear regression to predict the probability of success of olympic athletes. We know, in linear regression we predict y values for given x values or also known as feautures. Our y values are not discrete but rather continuous. That's why it is called a regression problem.For the given proble, We can use ridge regression to predict y values.We use an equation y = XB + e to find the hypothesis or also known as regression line that best fits the data. We estimate y values using the mentioned equation. Our goal is to find a line that fits as close to the actual values as possible meaning we want to minimize the error of actual values and estimated values. We can measure the error using least square and R^2 method. So, for the given prolem we will use the features asx values and using those features predict a y value given a new input x.
+
+
+3. Logisitic regression is a classifier that classfies discrete values of y for a given input x. We use the hypothesis 
+h theta (x) = 1/1+e^-theta^t.x to get a boundary that seperates the classes and from that we can classify the y as 0 or 1 for binary classification. Now, for given problem if we want to identify what percentage of data makes how confident the more value we provide to the data, given that it is relevant, our training model can get a better and more accurate result. So, logisitic regression can indentify which percentage of the data makes more confident giving more data and also we can use the maximum principle estimation which takes the log of the probability equation and from that we get the loss function.
